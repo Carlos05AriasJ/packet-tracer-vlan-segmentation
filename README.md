@@ -9,7 +9,7 @@ Documentación detallada sobre el diseño, enrutamiento inter-VLAN y políticas 
 ---
 
 
-## 🏗️ Topología de la Red y Conexión Física
+## Topología de la Red y Conexión Física
 
 <div align="justify">
 
@@ -30,13 +30,13 @@ Para interconectar los dispositivos se utilizó cable de cobre directo, siguiend
 * **PC0 a PC5** ➔ Switch Fa0/1 a Fa0/6
 
 
-### 🖼️ Esquema Visual de la Topología en el Simulador
+### Esquema Visual de la Topología en el Simulador
 ![Topología de la Red en Packet Tracer](img/Esquema-de-red-topográfica.png) 
 
 ---
 
 
-## 📊 Segmentación Lógica (VLANs) y Direccionamiento
+## Segmentación Lógica (VLANs) y Direccionamiento
 
 <div align="justify">
 
@@ -62,7 +62,7 @@ Al aislar los dominios de broadcast de cada departamento, los dispositivos de un
 ---
 
 
-## 🛠️ Configuración de Equipos e Interconexión (Cisco IOS)
+## Configuración de Equipos e Interconexión (Cisco IOS)
 
 
 ### 1. Creación de VLANs en el Switch
@@ -129,7 +129,7 @@ Router(config-subif)# ip address 192.168.20.1 255.255.255.0
 ---
 
 
-## 🔐 Control de Tráfico mediante ACL (Firewall Estático)
+## Control de Tráfico mediante ACL (Firewall Estático)
 
 <div align="justify">
 
@@ -153,7 +153,7 @@ Router(config-subif)# ip access-group 100 in
 ---
 
 
-## 🧪 Red Aislada del PC6 y Pruebas de Conectividad
+## Red Aislada del PC6 y Pruebas de Conectividad
 
 <div align="justify">
 
@@ -182,7 +182,7 @@ Las políticas de red se validaron mediante trazas ICMP en la consola, obteniend
   * `Destination host unreachable`: El router intercepta y bloquea activamente el paquete aplicando la política de seguridad.
 
 
-### 🖼️ Capturas Reales de las Pruebas de Conectividad (Consola)
+### Capturas Reales de las Pruebas de Conectividad (Consola)
 
 
 **Sin ACL**
@@ -196,7 +196,7 @@ VLAN 20:
 ![Prueba de conectividad VLAN 20 Sin ACL](img/Sin-ACL_VLAN-20.png) 
 
 
-**Con ACL***
+**Con ACL**
 
 VLAN 10:
 
@@ -209,7 +209,7 @@ VLAN 20:
 ---
 
 
-## 🧠 ¿Qué aprendí realizando este laboratorio?
+## ¿Qué aprendí realizando este laboratorio?
 
 <div align="justify">
 
